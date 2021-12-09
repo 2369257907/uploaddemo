@@ -1,0 +1,9 @@
+#本机配置
+file:
+  staticRootPath: http://localhost:8779
+  #静态资源映射路径
+  staticPatternPath: /uploadimg
+  #上传的文件存储路径
+  uploadFolder: E://uploadFile/
+
+

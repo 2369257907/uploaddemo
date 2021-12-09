@@ -1,0 +1,15 @@
+server:
+  port: 8779
+spring:
+  freemarker:
+    suffix: .html
+    cache: false
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      enabled: true
+      #单个文件最大限制
+      max-file-size: 2MB
+      #上传文件加起来的最大限制
+      max-request-size: 20MB

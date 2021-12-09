@@ -1,0 +1,17 @@
+<!--文件上传页面，上传文件后手动提交-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传</title>
+</head>
+<body>
+    <h1>文件上传</h1>
+    <form action="/upload/file" enctype="multipart/form-data" method="post">
+        <!-- dir 为指定目录名、 file 为上传的文件，只接收图片类型文件-->
+        <input type="text" value="bbb" name="dir">
+        <input name="file" type="file" accept="image/*">
+        <input type="submit" value="上传文件">
+    </form>
+</body>
+</html>

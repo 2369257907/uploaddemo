@@ -1,0 +1,8 @@
+#生产环境
+file:
+  #静态资源映射路径
+  staticPatternPath: /uploadimg/
+  #上传的文件存储路径
+  uploadFolder: /root/uploadFile/
+
+
