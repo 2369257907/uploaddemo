@@ -5,5 +5,3 @@ file:
   staticPatternPath: /uploadimg
   #上传的文件存储路径
   uploadFolder: E://uploadFile/
-
-

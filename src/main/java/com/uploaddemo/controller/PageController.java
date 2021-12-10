@@ -10,4 +10,9 @@ public class PageController {
     public String upload(){
         return "upload";
     }
+
+    @GetMapping("/editor")
+    public String editor(){
+        return "wangeditor";
+    }
 }

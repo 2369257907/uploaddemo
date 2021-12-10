@@ -1,5 +1,6 @@
 package com.uploaddemo.controller;
 
+import com.uploaddemo.service.OssUploadService;
 import com.uploaddemo.service.UploadService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,6 +17,8 @@ public class UploadController {
     @Autowired
     UploadService uploadService;
 
+    @Autowired
+    OssUploadService ossUploadService;
     @PostMapping("/upload/file")
     @ResponseBody
     public HashMap upload(@RequestParam("file") MultipartFile multipartFile, HttpServletRequest request){
@@ -28,6 +31,9 @@ public class UploadController {
         //获取用户指定的文件夹。目的是做隔离，不同的业务，放在不同的文件夹中。
         String dir = request.getParameter("dir");
 
-       return uploadService.uploadImg(multipartFile,dir);
+        //上传至本地
+        return uploadService.uploadImg(multipartFile,dir);
+
+
     }
 }

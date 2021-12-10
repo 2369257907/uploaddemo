@@ -8,10 +8,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 public class UploadService {
@@ -74,6 +71,7 @@ public class UploadService {
             map.put("filename",OriginalFilename);
             //服务器中存储文件的路径
             map.put("realPath",uploadFolder+dir +"/"+datePath);
+
             return map;
         }catch (IOException e){
             e.printStackTrace();

@@ -13,3 +13,10 @@ spring:
       max-file-size: 2MB
       #上传文件加起来的最大限制
       max-request-size: 20MB
+  datasource:
+    password: root
+    username: root
+    url: jdbc:mysql://localhost:3306/mybatis?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
